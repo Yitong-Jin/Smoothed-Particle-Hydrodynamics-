@@ -1,0 +1,201 @@
+\hypertarget{class_s_p_h__main}{}\doxysection{S\+P\+H\+\_\+main Class Reference}
+\label{class_s_p_h__main}\index{SPH\_main@{SPH\_main}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_s_p_h__main_a4f5bde12468e231abf2f93024506aa9b}{set\+\_\+values}} (void)
+\item 
+void \mbox{\hyperlink{class_s_p_h__main_a8b5dc6fe313ec6ce12d1c3670e24de58}{initialise\+\_\+grid}} (void)
+\item 
+void \mbox{\hyperlink{class_s_p_h__main_a1ac5647e7588e2a4a5e9e5e57765e8c3}{place\+\_\+points}} (double $\ast$min, double $\ast$max)
+\item 
+void \mbox{\hyperlink{class_s_p_h__main_a36c682b4a108aacadbdc32bf03daddc9}{place\+\_\+points\+\_\+beach}} (double $\ast$min, double $\ast$max)
+\item 
+void \mbox{\hyperlink{class_s_p_h__main_a8fc0fad18085d270bf8789a1cba32022}{allocate\+\_\+to\+\_\+grid}} (void)
+\item 
+\mbox{\Hypertarget{class_s_p_h__main_a3395e534152c99268fce913a4b34c2e7}\label{class_s_p_h__main_a3395e534152c99268fce913a4b34c2e7}} 
+void {\bfseries neighbour\+\_\+iterate} (\mbox{\hyperlink{class_s_p_h__particle}{S\+P\+H\+\_\+particle}} $\ast$part)
+\item 
+void \mbox{\hyperlink{class_s_p_h__main_a87179845caa3001c58a1441c1eaf6073}{smoothing}} ()
+\item 
+void \mbox{\hyperlink{class_s_p_h__main_a78bbc2e563642b330101f8a73f1476c2}{smoothing\+\_\+neighbour\+\_\+itr}} (\mbox{\hyperlink{class_s_p_h__particle}{S\+P\+H\+\_\+particle}} $\ast$part)
+\item 
+void \mbox{\hyperlink{class_s_p_h__main_a4f5160598e7ae15549f61b67014fb50a}{neighbour\+\_\+iterate\+\_\+stencil}} (\mbox{\hyperlink{class_s_p_h__particle}{S\+P\+H\+\_\+particle}} $\ast$part)
+\item 
+void \mbox{\hyperlink{class_s_p_h__main_a6e5bbf3e8257ba67f5b9e7c847cd66df}{set\+\_\+adaptive\+\_\+dt}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_s_p_h__main_a7acf3fe444e12f3a30ddd9096f918b0b}{h\+\_\+fac}}
+\item 
+double \mbox{\hyperlink{class_s_p_h__main_ad08ae3624fc5ffdd8921c6b14f95f334}{dx}}
+\item 
+double \mbox{\hyperlink{class_s_p_h__main_a1ec4abf166a503032e8845d2589a65d4}{g}}
+\item 
+double \mbox{\hyperlink{class_s_p_h__main_ae4da52957e8cd7accd36f49cf4da27ff}{c\+\_\+0}}
+\item 
+double \mbox{\hyperlink{class_s_p_h__main_a3d0b0b7def678d83424519ea7f091058}{dt}}
+\item 
+double \mbox{\hyperlink{class_s_p_h__main_a6811bdc9b5812658d9a28b976d420f1b}{dt\+\_\+\+C\+FL}}
+\item 
+double \mbox{\hyperlink{class_s_p_h__main_a8ee39e42a2450336a2f591ea2f7917bc}{dt\+\_\+F}}
+\item 
+double \mbox{\hyperlink{class_s_p_h__main_a9690d6b91fcaa5947f18f4df05839eb2}{dt\+\_\+A}}
+\item 
+double \mbox{\hyperlink{class_s_p_h__main_aa683cb3ca3c0930e36ee92d415a04c3b}{h}}
+\item 
+double \mbox{\hyperlink{class_s_p_h__main_a8751bc459a7e75f0e8229b21075fc1b4}{min\+\_\+x}} \mbox{[}2\mbox{]}
+\item 
+\mbox{\Hypertarget{class_s_p_h__main_a5ebf0300e2f5b06ecc3ce34697e92f29}\label{class_s_p_h__main_a5ebf0300e2f5b06ecc3ce34697e92f29}} 
+double {\bfseries max\+\_\+x} \mbox{[}2\mbox{]}
+\item 
+int \mbox{\hyperlink{class_s_p_h__main_a1f289336f001eec190da1ae275a6a5a5}{max\+\_\+list}} \mbox{[}2\mbox{]}
+\item 
+vector$<$ \mbox{\hyperlink{class_s_p_h__particle}{S\+P\+H\+\_\+particle}} $>$ \mbox{\hyperlink{class_s_p_h__main_a63e731b44f9fcc237ab1f2063768bb31}{particle\+\_\+list}}
+\item 
+vector$<$ vector$<$ vector$<$ \mbox{\hyperlink{class_s_p_h__particle}{S\+P\+H\+\_\+particle}} $\ast$ $>$ $>$ $>$ \mbox{\hyperlink{class_s_p_h__main_a411bef97226d0af957500aaa1003b588}{search\+\_\+grid}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_s_p_h__main_a8fc0fad18085d270bf8789a1cba32022}\label{class_s_p_h__main_a8fc0fad18085d270bf8789a1cba32022}} 
+\index{SPH\_main@{SPH\_main}!allocate\_to\_grid@{allocate\_to\_grid}}
+\index{allocate\_to\_grid@{allocate\_to\_grid}!SPH\_main@{SPH\_main}}
+\doxysubsubsection{\texorpdfstring{allocate\_to\_grid()}{allocate\_to\_grid()}}
+{\footnotesize\ttfamily void S\+P\+H\+\_\+main\+::allocate\+\_\+to\+\_\+grid (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Function that allocates all the points to the search grid (assumes that index has been appropriately updated) \mbox{\Hypertarget{class_s_p_h__main_a8b5dc6fe313ec6ce12d1c3670e24de58}\label{class_s_p_h__main_a8b5dc6fe313ec6ce12d1c3670e24de58}} 
+\index{SPH\_main@{SPH\_main}!initialise\_grid@{initialise\_grid}}
+\index{initialise\_grid@{initialise\_grid}!SPH\_main@{SPH\_main}}
+\doxysubsubsection{\texorpdfstring{initialise\_grid()}{initialise\_grid()}}
+{\footnotesize\ttfamily void S\+P\+H\+\_\+main\+::initialise\+\_\+grid (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Function to initialise a grid onto the space \mbox{\Hypertarget{class_s_p_h__main_a4f5160598e7ae15549f61b67014fb50a}\label{class_s_p_h__main_a4f5160598e7ae15549f61b67014fb50a}} 
+\index{SPH\_main@{SPH\_main}!neighbour\_iterate\_stencil@{neighbour\_iterate\_stencil}}
+\index{neighbour\_iterate\_stencil@{neighbour\_iterate\_stencil}!SPH\_main@{SPH\_main}}
+\doxysubsubsection{\texorpdfstring{neighbour\_iterate\_stencil()}{neighbour\_iterate\_stencil()}}
+{\footnotesize\ttfamily void S\+P\+H\+\_\+main\+::neighbour\+\_\+iterate\+\_\+stencil (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_s_p_h__particle}{S\+P\+H\+\_\+particle}} $\ast$}]{part }\end{DoxyParamCaption})}
+
+Function to calculate the acceleration and density by iterating over particles within 2h of the chosen particle using a stencil Also updates dt\+\_\+\+C\+FL \mbox{\Hypertarget{class_s_p_h__main_a1ac5647e7588e2a4a5e9e5e57765e8c3}\label{class_s_p_h__main_a1ac5647e7588e2a4a5e9e5e57765e8c3}} 
+\index{SPH\_main@{SPH\_main}!place\_points@{place\_points}}
+\index{place\_points@{place\_points}!SPH\_main@{SPH\_main}}
+\doxysubsubsection{\texorpdfstring{place\_points()}{place\_points()}}
+{\footnotesize\ttfamily void S\+P\+H\+\_\+main\+::place\+\_\+points (\begin{DoxyParamCaption}\item[{double $\ast$}]{min,  }\item[{double $\ast$}]{max }\end{DoxyParamCaption})}
+
+Function to place both the fluid and boundary particles into the grid \mbox{\Hypertarget{class_s_p_h__main_a36c682b4a108aacadbdc32bf03daddc9}\label{class_s_p_h__main_a36c682b4a108aacadbdc32bf03daddc9}} 
+\index{SPH\_main@{SPH\_main}!place\_points\_beach@{place\_points\_beach}}
+\index{place\_points\_beach@{place\_points\_beach}!SPH\_main@{SPH\_main}}
+\doxysubsubsection{\texorpdfstring{place\_points\_beach()}{place\_points\_beach()}}
+{\footnotesize\ttfamily void S\+P\+H\+\_\+main\+::place\+\_\+points\+\_\+beach (\begin{DoxyParamCaption}\item[{double $\ast$}]{min,  }\item[{double $\ast$}]{max }\end{DoxyParamCaption})}
+
+Function to place both the fluid and boundary particles into the grid for a beach domain \mbox{\Hypertarget{class_s_p_h__main_a6e5bbf3e8257ba67f5b9e7c847cd66df}\label{class_s_p_h__main_a6e5bbf3e8257ba67f5b9e7c847cd66df}} 
+\index{SPH\_main@{SPH\_main}!set\_adaptive\_dt@{set\_adaptive\_dt}}
+\index{set\_adaptive\_dt@{set\_adaptive\_dt}!SPH\_main@{SPH\_main}}
+\doxysubsubsection{\texorpdfstring{set\_adaptive\_dt()}{set\_adaptive\_dt()}}
+{\footnotesize\ttfamily void S\+P\+H\+\_\+main\+::set\+\_\+adaptive\+\_\+dt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function to update the time-\/step according to the properties of the current time \mbox{\Hypertarget{class_s_p_h__main_a4f5bde12468e231abf2f93024506aa9b}\label{class_s_p_h__main_a4f5bde12468e231abf2f93024506aa9b}} 
+\index{SPH\_main@{SPH\_main}!set\_values@{set\_values}}
+\index{set\_values@{set\_values}!SPH\_main@{SPH\_main}}
+\doxysubsubsection{\texorpdfstring{set\_values()}{set\_values()}}
+{\footnotesize\ttfamily void S\+P\+H\+\_\+main\+::set\+\_\+values (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Function that set values for the entire space \mbox{\Hypertarget{class_s_p_h__main_a87179845caa3001c58a1441c1eaf6073}\label{class_s_p_h__main_a87179845caa3001c58a1441c1eaf6073}} 
+\index{SPH\_main@{SPH\_main}!smoothing@{smoothing}}
+\index{smoothing@{smoothing}!SPH\_main@{SPH\_main}}
+\doxysubsubsection{\texorpdfstring{smoothing()}{smoothing()}}
+{\footnotesize\ttfamily void S\+P\+H\+\_\+main\+::smoothing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function that smooths densities of all the particles \mbox{\Hypertarget{class_s_p_h__main_a78bbc2e563642b330101f8a73f1476c2}\label{class_s_p_h__main_a78bbc2e563642b330101f8a73f1476c2}} 
+\index{SPH\_main@{SPH\_main}!smoothing\_neighbour\_itr@{smoothing\_neighbour\_itr}}
+\index{smoothing\_neighbour\_itr@{smoothing\_neighbour\_itr}!SPH\_main@{SPH\_main}}
+\doxysubsubsection{\texorpdfstring{smoothing\_neighbour\_itr()}{smoothing\_neighbour\_itr()}}
+{\footnotesize\ttfamily void S\+P\+H\+\_\+main\+::smoothing\+\_\+neighbour\+\_\+itr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_s_p_h__particle}{S\+P\+H\+\_\+particle}} $\ast$}]{part }\end{DoxyParamCaption})}
+
+Function to smooth the density for a particular particle Also updates dt\+\_\+\+C\+FL 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_s_p_h__main_ae4da52957e8cd7accd36f49cf4da27ff}\label{class_s_p_h__main_ae4da52957e8cd7accd36f49cf4da27ff}} 
+\index{SPH\_main@{SPH\_main}!c\_0@{c\_0}}
+\index{c\_0@{c\_0}!SPH\_main@{SPH\_main}}
+\doxysubsubsection{\texorpdfstring{c\_0}{c\_0}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+main\+::c\+\_\+0}
+
+speed of sound \mbox{\Hypertarget{class_s_p_h__main_a3d0b0b7def678d83424519ea7f091058}\label{class_s_p_h__main_a3d0b0b7def678d83424519ea7f091058}} 
+\index{SPH\_main@{SPH\_main}!dt@{dt}}
+\index{dt@{dt}!SPH\_main@{SPH\_main}}
+\doxysubsubsection{\texorpdfstring{dt}{dt}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+main\+::dt}
+
+set in set\+\_\+values \mbox{\Hypertarget{class_s_p_h__main_a9690d6b91fcaa5947f18f4df05839eb2}\label{class_s_p_h__main_a9690d6b91fcaa5947f18f4df05839eb2}} 
+\index{SPH\_main@{SPH\_main}!dt\_A@{dt\_A}}
+\index{dt\_A@{dt\_A}!SPH\_main@{SPH\_main}}
+\doxysubsubsection{\texorpdfstring{dt\_A}{dt\_A}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+main\+::dt\+\_\+A}
+
+Acoustic criterion \mbox{\Hypertarget{class_s_p_h__main_a6811bdc9b5812658d9a28b976d420f1b}\label{class_s_p_h__main_a6811bdc9b5812658d9a28b976d420f1b}} 
+\index{SPH\_main@{SPH\_main}!dt\_CFL@{dt\_CFL}}
+\index{dt\_CFL@{dt\_CFL}!SPH\_main@{SPH\_main}}
+\doxysubsubsection{\texorpdfstring{dt\_CFL}{dt\_CFL}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+main\+::dt\+\_\+\+C\+FL}
+
+Courant-\/\+Freidrichs-\/\+Lewy criterion \mbox{\Hypertarget{class_s_p_h__main_a8ee39e42a2450336a2f591ea2f7917bc}\label{class_s_p_h__main_a8ee39e42a2450336a2f591ea2f7917bc}} 
+\index{SPH\_main@{SPH\_main}!dt\_F@{dt\_F}}
+\index{dt\_F@{dt\_F}!SPH\_main@{SPH\_main}}
+\doxysubsubsection{\texorpdfstring{dt\_F}{dt\_F}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+main\+::dt\+\_\+F}
+
+Force criterion \mbox{\Hypertarget{class_s_p_h__main_ad08ae3624fc5ffdd8921c6b14f95f334}\label{class_s_p_h__main_ad08ae3624fc5ffdd8921c6b14f95f334}} 
+\index{SPH\_main@{SPH\_main}!dx@{dx}}
+\index{dx@{dx}!SPH\_main@{SPH\_main}}
+\doxysubsubsection{\texorpdfstring{dx}{dx}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+main\+::dx}
+
+particle initial spacing \mbox{\Hypertarget{class_s_p_h__main_a1ec4abf166a503032e8845d2589a65d4}\label{class_s_p_h__main_a1ec4abf166a503032e8845d2589a65d4}} 
+\index{SPH\_main@{SPH\_main}!g@{g}}
+\index{g@{g}!SPH\_main@{SPH\_main}}
+\doxysubsubsection{\texorpdfstring{g}{g}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+main\+::g}
+
+acceleration due to gravity \mbox{\Hypertarget{class_s_p_h__main_aa683cb3ca3c0930e36ee92d415a04c3b}\label{class_s_p_h__main_aa683cb3ca3c0930e36ee92d415a04c3b}} 
+\index{SPH\_main@{SPH\_main}!h@{h}}
+\index{h@{h}!SPH\_main@{SPH\_main}}
+\doxysubsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+main\+::h}
+
+smoothing length \mbox{\Hypertarget{class_s_p_h__main_a7acf3fe444e12f3a30ddd9096f918b0b}\label{class_s_p_h__main_a7acf3fe444e12f3a30ddd9096f918b0b}} 
+\index{SPH\_main@{SPH\_main}!h\_fac@{h\_fac}}
+\index{h\_fac@{h\_fac}!SPH\_main@{SPH\_main}}
+\doxysubsubsection{\texorpdfstring{h\_fac}{h\_fac}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+main\+::h\+\_\+fac}
+
+set in set values -\/ links h to dx$^\wedge$2 (1.\+3) \mbox{\Hypertarget{class_s_p_h__main_a1f289336f001eec190da1ae275a6a5a5}\label{class_s_p_h__main_a1f289336f001eec190da1ae275a6a5a5}} 
+\index{SPH\_main@{SPH\_main}!max\_list@{max\_list}}
+\index{max\_list@{max\_list}!SPH\_main@{SPH\_main}}
+\doxysubsubsection{\texorpdfstring{max\_list}{max\_list}}
+{\footnotesize\ttfamily int S\+P\+H\+\_\+main\+::max\+\_\+list\mbox{[}2\mbox{]}}
+
+contains max dimensions of domain \mbox{\Hypertarget{class_s_p_h__main_a8751bc459a7e75f0e8229b21075fc1b4}\label{class_s_p_h__main_a8751bc459a7e75f0e8229b21075fc1b4}} 
+\index{SPH\_main@{SPH\_main}!min\_x@{min\_x}}
+\index{min\_x@{min\_x}!SPH\_main@{SPH\_main}}
+\doxysubsubsection{\texorpdfstring{min\_x}{min\_x}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+main\+::min\+\_\+x\mbox{[}2\mbox{]}}
+
+dimensions of simulation region \mbox{\Hypertarget{class_s_p_h__main_a63e731b44f9fcc237ab1f2063768bb31}\label{class_s_p_h__main_a63e731b44f9fcc237ab1f2063768bb31}} 
+\index{SPH\_main@{SPH\_main}!particle\_list@{particle\_list}}
+\index{particle\_list@{particle\_list}!SPH\_main@{SPH\_main}}
+\doxysubsubsection{\texorpdfstring{particle\_list}{particle\_list}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_s_p_h__particle}{S\+P\+H\+\_\+particle}}$>$ S\+P\+H\+\_\+main\+::particle\+\_\+list}
+
+list of all the particles \mbox{\Hypertarget{class_s_p_h__main_a411bef97226d0af957500aaa1003b588}\label{class_s_p_h__main_a411bef97226d0af957500aaa1003b588}} 
+\index{SPH\_main@{SPH\_main}!search\_grid@{search\_grid}}
+\index{search\_grid@{search\_grid}!SPH\_main@{SPH\_main}}
+\doxysubsubsection{\texorpdfstring{search\_grid}{search\_grid}}
+{\footnotesize\ttfamily vector$<$vector$<$vector$<$\mbox{\hyperlink{class_s_p_h__particle}{S\+P\+H\+\_\+particle}}$\ast$$>$ $>$ $>$ S\+P\+H\+\_\+main\+::search\+\_\+grid}
+
+Outer 2 refers to the row and column of the grid respectively, inner vector is the list of pointers in each cell 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+S\+P\+H\+\_\+2\+D.\+h\end{DoxyCompactItemize}

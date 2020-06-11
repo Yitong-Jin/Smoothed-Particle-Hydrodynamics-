@@ -1,0 +1,242 @@
+\hypertarget{class_s_p_h__particle}{}\doxysection{S\+P\+H\+\_\+particle Class Reference}
+\label{class_s_p_h__particle}\index{SPH\_particle@{SPH\_particle}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_s_p_h__particle_a0ea485e6df830ac6a9d57a81111ad409}{calc\+\_\+index}} (void)
+\item 
+double \mbox{\hyperlink{class_s_p_h__particle_ac45bf01dcb3bef97de49096964c2bac4}{get\+\_\+B}} (void)
+\item 
+double \mbox{\hyperlink{class_s_p_h__particle_ab4b52617fb68aad24953e3b4a662e75f}{get\+\_\+P}} (double \&\mbox{\hyperlink{class_s_p_h__particle_ab7e9da96153ff887ae1b72f32f6c8868}{rho}})
+\item 
+double \mbox{\hyperlink{class_s_p_h__particle_a8fcaf5212a2433403f25d1f8525c1578}{get\+\_\+dwdr}} (double \&r, double \&h)
+\item 
+void \mbox{\hyperlink{class_s_p_h__particle_a459deda034fb3617861b19a334118b30}{N\+S\+\_\+acceleration\+\_\+simultaneous}} (\mbox{\hyperlink{class_s_p_h__particle}{S\+P\+H\+\_\+particle}} $\ast$other\+\_\+particle, double $\ast$e\+\_\+ij, double $\ast$v\+\_\+ij, double \&dist)
+\item 
+void \mbox{\hyperlink{class_s_p_h__particle_a5a5c3d33520c5cf792a5e83df01a502a}{N\+S\+\_\+acceleration}} (\mbox{\hyperlink{class_s_p_h__particle}{S\+P\+H\+\_\+particle}} $\ast$other\+\_\+particle, double $\ast$e\+\_\+ij, double $\ast$v\+\_\+ij, double dist)
+\item 
+void \mbox{\hyperlink{class_s_p_h__particle_a0d2afd7c66ea5da44916ae837f531fd9}{N\+S\+\_\+density\+\_\+simultaneous}} (\mbox{\hyperlink{class_s_p_h__particle}{S\+P\+H\+\_\+particle}} $\ast$other\+\_\+particle, double $\ast$e\+\_\+ij, double $\ast$v\+\_\+ij, double \&dist)
+\item 
+void \mbox{\hyperlink{class_s_p_h__particle_acfddf4a971c17bf01f57c05529d7dc15}{N\+S\+\_\+density}} (\mbox{\hyperlink{class_s_p_h__particle}{S\+P\+H\+\_\+particle}} $\ast$other\+\_\+particle, double $\ast$e\+\_\+ij, double $\ast$v\+\_\+ij, double dist)
+\item 
+double \mbox{\hyperlink{class_s_p_h__particle_af76ed4b4f70bebc62da9e0402a86fead}{get\+\_\+W}} (double \&r, double \&h)
+\item 
+double \mbox{\hyperlink{class_s_p_h__particle_ac35098556e60c9e1579348dd476d1b51}{repulsion\+\_\+func}} (double \&d, double \&n)
+\item 
+void \mbox{\hyperlink{class_s_p_h__particle_a7ae336e1ae0827e818d63d7e0dd8cdfe}{apply\+\_\+boundary\+\_\+forces}} (string keyword)
+\item 
+void \mbox{\hyperlink{class_s_p_h__particle_a16060c85b5d246a320cb60f4e350bbc6}{update}} (string keyword)
+\item 
+void \mbox{\hyperlink{class_s_p_h__particle_a4745650e7270bc314f41a0dfd9cb8118}{update\+\_\+pc}} (int \mbox{\hyperlink{class_s_p_h__particle_a7709c060e797c275850b7c5232e23064}{step}}, string keyword)
+\item 
+void \mbox{\hyperlink{class_s_p_h__particle_ad05459ed324c7361e242d2eac97626a5}{set\+\_\+step}} (int step\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_s_p_h__particle_a702ad69836ea65d163d0a3d7564ca0be}{x}} \mbox{[}2\mbox{]}\mbox{[}2\mbox{]}
+\item 
+\mbox{\Hypertarget{class_s_p_h__particle_a10169895996d34db5ee156736eaede8e}\label{class_s_p_h__particle_a10169895996d34db5ee156736eaede8e}} 
+double {\bfseries v} \mbox{[}2\mbox{]}\mbox{[}2\mbox{]}
+\item 
+double \mbox{\hyperlink{class_s_p_h__particle_ab7e9da96153ff887ae1b72f32f6c8868}{rho}} \mbox{[}2\mbox{]}
+\item 
+\mbox{\Hypertarget{class_s_p_h__particle_aa68b57fe0ea275d9954b17a3743b541a}\label{class_s_p_h__particle_aa68b57fe0ea275d9954b17a3743b541a}} 
+double {\bfseries P}
+\item 
+double \mbox{\hyperlink{class_s_p_h__particle_a66fa999693a147d310fb9a3e630e028a}{mass}}
+\item 
+double \mbox{\hyperlink{class_s_p_h__particle_a2acdedcab83c44bf7c3c1a899f01df4f}{rho0}}
+\item 
+double \mbox{\hyperlink{class_s_p_h__particle_a9329e05774054a5fe46d3c96fa8aab51}{dv}} \mbox{[}2\mbox{]}
+\item 
+double \mbox{\hyperlink{class_s_p_h__particle_adb06ccd48964228f6f3042c888036881}{drho}}
+\item 
+double \mbox{\hyperlink{class_s_p_h__particle_ac0e2dd8719e4512c0064d860a93543d3}{visc}}
+\item 
+double \mbox{\hyperlink{class_s_p_h__particle_a357bf9d0ec062438eed16c29ae9fe4b6}{gamma}}
+\item 
+bool \mbox{\hyperlink{class_s_p_h__particle_a2318dade69ca109829faaabd9db82eb8}{boundary}}
+\item 
+\mbox{\Hypertarget{class_s_p_h__particle_a3afb4832d8b63d93521d77f15a56dfc2}\label{class_s_p_h__particle_a3afb4832d8b63d93521d77f15a56dfc2}} 
+int {\bfseries part\+\_\+num}
+\item 
+double \mbox{\hyperlink{class_s_p_h__particle_a74544820f506880ea21d10c3260c4e62}{rho\+\_\+new}}
+\item 
+int \mbox{\hyperlink{class_s_p_h__particle_a7709c060e797c275850b7c5232e23064}{step}}
+\item 
+int \mbox{\hyperlink{class_s_p_h__particle_a051da004f8b1e2214e3523bbd0634301}{list\+\_\+num}} \mbox{[}2\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_s_p_h__particle_a3b8621b521a3008f4085fb9445260b59}\label{class_s_p_h__particle_a3b8621b521a3008f4085fb9445260b59}} 
+static \mbox{\hyperlink{class_s_p_h__main}{S\+P\+H\+\_\+main}} $\ast$ {\bfseries main\+\_\+data}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_s_p_h__particle_a7ae336e1ae0827e818d63d7e0dd8cdfe}\label{class_s_p_h__particle_a7ae336e1ae0827e818d63d7e0dd8cdfe}} 
+\index{SPH\_particle@{SPH\_particle}!apply\_boundary\_forces@{apply\_boundary\_forces}}
+\index{apply\_boundary\_forces@{apply\_boundary\_forces}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{apply\_boundary\_forces()}{apply\_boundary\_forces()}}
+{\footnotesize\ttfamily void S\+P\+H\+\_\+particle\+::apply\+\_\+boundary\+\_\+forces (\begin{DoxyParamCaption}\item[{string}]{keyword }\end{DoxyParamCaption})}
+
+Function to apply the repulsive forces onto the fluid particles \mbox{\Hypertarget{class_s_p_h__particle_a0ea485e6df830ac6a9d57a81111ad409}\label{class_s_p_h__particle_a0ea485e6df830ac6a9d57a81111ad409}} 
+\index{SPH\_particle@{SPH\_particle}!calc\_index@{calc\_index}}
+\index{calc\_index@{calc\_index}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{calc\_index()}{calc\_index()}}
+{\footnotesize\ttfamily void S\+P\+H\+\_\+particle\+::calc\+\_\+index (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Function to calculate the row and col index of the particle\textquotesingle{}s sub-\/grid \mbox{\Hypertarget{class_s_p_h__particle_ac45bf01dcb3bef97de49096964c2bac4}\label{class_s_p_h__particle_ac45bf01dcb3bef97de49096964c2bac4}} 
+\index{SPH\_particle@{SPH\_particle}!get\_B@{get\_B}}
+\index{get\_B@{get\_B}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{get\_B()}{get\_B()}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+particle\+::get\+\_\+B (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Function to calculate B, where B is the reference density of water \mbox{\Hypertarget{class_s_p_h__particle_a8fcaf5212a2433403f25d1f8525c1578}\label{class_s_p_h__particle_a8fcaf5212a2433403f25d1f8525c1578}} 
+\index{SPH\_particle@{SPH\_particle}!get\_dwdr@{get\_dwdr}}
+\index{get\_dwdr@{get\_dwdr}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{get\_dwdr()}{get\_dwdr()}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+particle\+::get\+\_\+dwdr (\begin{DoxyParamCaption}\item[{double \&}]{r,  }\item[{double \&}]{h }\end{DoxyParamCaption})}
+
+Function to get the differential (dwdr) of the smoothing kernel \mbox{\Hypertarget{class_s_p_h__particle_ab4b52617fb68aad24953e3b4a662e75f}\label{class_s_p_h__particle_ab4b52617fb68aad24953e3b4a662e75f}} 
+\index{SPH\_particle@{SPH\_particle}!get\_P@{get\_P}}
+\index{get\_P@{get\_P}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{get\_P()}{get\_P()}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+particle\+::get\+\_\+P (\begin{DoxyParamCaption}\item[{double \&}]{rho }\end{DoxyParamCaption})}
+
+Function to get P, where P is pressure -\/ calculated using the Tait Equation \mbox{\Hypertarget{class_s_p_h__particle_af76ed4b4f70bebc62da9e0402a86fead}\label{class_s_p_h__particle_af76ed4b4f70bebc62da9e0402a86fead}} 
+\index{SPH\_particle@{SPH\_particle}!get\_W@{get\_W}}
+\index{get\_W@{get\_W}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{get\_W()}{get\_W()}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+particle\+::get\+\_\+W (\begin{DoxyParamCaption}\item[{double \&}]{r,  }\item[{double \&}]{h }\end{DoxyParamCaption})}
+
+W is the smoothing kernel -\/ has compact support and it is chosen to be normal in this S\+PH model \mbox{\Hypertarget{class_s_p_h__particle_a5a5c3d33520c5cf792a5e83df01a502a}\label{class_s_p_h__particle_a5a5c3d33520c5cf792a5e83df01a502a}} 
+\index{SPH\_particle@{SPH\_particle}!NS\_acceleration@{NS\_acceleration}}
+\index{NS\_acceleration@{NS\_acceleration}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{NS\_acceleration()}{NS\_acceleration()}}
+{\footnotesize\ttfamily void S\+P\+H\+\_\+particle\+::\+N\+S\+\_\+acceleration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_s_p_h__particle}{S\+P\+H\+\_\+particle}} $\ast$}]{other\+\_\+particle,  }\item[{double $\ast$}]{e\+\_\+ij,  }\item[{double $\ast$}]{v\+\_\+ij,  }\item[{double}]{dist }\end{DoxyParamCaption})}
+
+Function that calculates the acceleration of a particle based on summation using the smoothing kernel\textquotesingle{}s gradient Will be used in the neighbour\+\_\+iterate Also updates dt\+\_\+F \mbox{\Hypertarget{class_s_p_h__particle_a459deda034fb3617861b19a334118b30}\label{class_s_p_h__particle_a459deda034fb3617861b19a334118b30}} 
+\index{SPH\_particle@{SPH\_particle}!NS\_acceleration\_simultaneous@{NS\_acceleration\_simultaneous}}
+\index{NS\_acceleration\_simultaneous@{NS\_acceleration\_simultaneous}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{NS\_acceleration\_simultaneous()}{NS\_acceleration\_simultaneous()}}
+{\footnotesize\ttfamily void S\+P\+H\+\_\+particle\+::\+N\+S\+\_\+acceleration\+\_\+simultaneous (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_s_p_h__particle}{S\+P\+H\+\_\+particle}} $\ast$}]{other\+\_\+particle,  }\item[{double $\ast$}]{e\+\_\+ij,  }\item[{double $\ast$}]{v\+\_\+ij,  }\item[{double \&}]{dist }\end{DoxyParamCaption})}
+
+Function that calculates the acceleration of a particle based on summation using the smoothing kernel\textquotesingle{}s gradient Will be used in the neighbour\+\_\+iterate\+\_\+stencil Also updates dt\+\_\+F \mbox{\Hypertarget{class_s_p_h__particle_acfddf4a971c17bf01f57c05529d7dc15}\label{class_s_p_h__particle_acfddf4a971c17bf01f57c05529d7dc15}} 
+\index{SPH\_particle@{SPH\_particle}!NS\_density@{NS\_density}}
+\index{NS\_density@{NS\_density}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{NS\_density()}{NS\_density()}}
+{\footnotesize\ttfamily void S\+P\+H\+\_\+particle\+::\+N\+S\+\_\+density (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_s_p_h__particle}{S\+P\+H\+\_\+particle}} $\ast$}]{other\+\_\+particle,  }\item[{double $\ast$}]{e\+\_\+ij,  }\item[{double $\ast$}]{v\+\_\+ij,  }\item[{double}]{dist }\end{DoxyParamCaption})}
+
+Function that calculates the density change of a particle over time based on summation using the smoothing kernel\textquotesingle{}s gradient Will be used in the neighbour\+\_\+iterate Also updates dt\+\_\+A \mbox{\Hypertarget{class_s_p_h__particle_a0d2afd7c66ea5da44916ae837f531fd9}\label{class_s_p_h__particle_a0d2afd7c66ea5da44916ae837f531fd9}} 
+\index{SPH\_particle@{SPH\_particle}!NS\_density\_simultaneous@{NS\_density\_simultaneous}}
+\index{NS\_density\_simultaneous@{NS\_density\_simultaneous}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{NS\_density\_simultaneous()}{NS\_density\_simultaneous()}}
+{\footnotesize\ttfamily void S\+P\+H\+\_\+particle\+::\+N\+S\+\_\+density\+\_\+simultaneous (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_s_p_h__particle}{S\+P\+H\+\_\+particle}} $\ast$}]{other\+\_\+particle,  }\item[{double $\ast$}]{e\+\_\+ij,  }\item[{double $\ast$}]{v\+\_\+ij,  }\item[{double \&}]{dist }\end{DoxyParamCaption})}
+
+Function that calculates the density change of a particle over time based on summation using the smoothing kernel\textquotesingle{}s gradient Will be used in the neighbour\+\_\+iterate\+\_\+stencil Also updates dt\+\_\+A \mbox{\Hypertarget{class_s_p_h__particle_ac35098556e60c9e1579348dd476d1b51}\label{class_s_p_h__particle_ac35098556e60c9e1579348dd476d1b51}} 
+\index{SPH\_particle@{SPH\_particle}!repulsion\_func@{repulsion\_func}}
+\index{repulsion\_func@{repulsion\_func}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{repulsion\_func()}{repulsion\_func()}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+particle\+::repulsion\+\_\+func (\begin{DoxyParamCaption}\item[{double \&}]{d,  }\item[{double \&}]{n }\end{DoxyParamCaption})}
+
+Function to calculate the repulsive force Defines a function that\textquotesingle{}s repulsive at the boundaries and forceless elsewhere \mbox{\Hypertarget{class_s_p_h__particle_ad05459ed324c7361e242d2eac97626a5}\label{class_s_p_h__particle_ad05459ed324c7361e242d2eac97626a5}} 
+\index{SPH\_particle@{SPH\_particle}!set\_step@{set\_step}}
+\index{set\_step@{set\_step}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{set\_step()}{set\_step()}}
+{\footnotesize\ttfamily void S\+P\+H\+\_\+particle\+::set\+\_\+step (\begin{DoxyParamCaption}\item[{int}]{step\+\_\+ }\end{DoxyParamCaption})}
+
+Set half-\/step increments (required by update\+\_\+pc) \mbox{\Hypertarget{class_s_p_h__particle_a16060c85b5d246a320cb60f4e350bbc6}\label{class_s_p_h__particle_a16060c85b5d246a320cb60f4e350bbc6}} 
+\index{SPH\_particle@{SPH\_particle}!update@{update}}
+\index{update@{update}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void S\+P\+H\+\_\+particle\+::update (\begin{DoxyParamCaption}\item[{string}]{keyword }\end{DoxyParamCaption})}
+
+Function to update the properties of the particles after every iteration using Forward Euler method \mbox{\Hypertarget{class_s_p_h__particle_a4745650e7270bc314f41a0dfd9cb8118}\label{class_s_p_h__particle_a4745650e7270bc314f41a0dfd9cb8118}} 
+\index{SPH\_particle@{SPH\_particle}!update\_pc@{update\_pc}}
+\index{update\_pc@{update\_pc}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{update\_pc()}{update\_pc()}}
+{\footnotesize\ttfamily void S\+P\+H\+\_\+particle\+::update\+\_\+pc (\begin{DoxyParamCaption}\item[{int}]{step,  }\item[{string}]{keyword }\end{DoxyParamCaption})}
+
+Function to update the properties of the particles after every iteration using Improved Euler/\+Predictor-\/\+Corrector method 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_s_p_h__particle_a2318dade69ca109829faaabd9db82eb8}\label{class_s_p_h__particle_a2318dade69ca109829faaabd9db82eb8}} 
+\index{SPH\_particle@{SPH\_particle}!boundary@{boundary}}
+\index{boundary@{boundary}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{boundary}{boundary}}
+{\footnotesize\ttfamily bool S\+P\+H\+\_\+particle\+::boundary}
+
+indicates whether particle is part of boundary or not \mbox{\Hypertarget{class_s_p_h__particle_adb06ccd48964228f6f3042c888036881}\label{class_s_p_h__particle_adb06ccd48964228f6f3042c888036881}} 
+\index{SPH\_particle@{SPH\_particle}!drho@{drho}}
+\index{drho@{drho}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{drho}{drho}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+particle\+::drho}
+
+(big) D -\/ rate of density change \mbox{\Hypertarget{class_s_p_h__particle_a9329e05774054a5fe46d3c96fa8aab51}\label{class_s_p_h__particle_a9329e05774054a5fe46d3c96fa8aab51}} 
+\index{SPH\_particle@{SPH\_particle}!dv@{dv}}
+\index{dv@{dv}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{dv}{dv}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+particle\+::dv\mbox{[}2\mbox{]}}
+
+acceleration in x and y directions in m / s$^\wedge$2 \mbox{\Hypertarget{class_s_p_h__particle_a357bf9d0ec062438eed16c29ae9fe4b6}\label{class_s_p_h__particle_a357bf9d0ec062438eed16c29ae9fe4b6}} 
+\index{SPH\_particle@{SPH\_particle}!gamma@{gamma}}
+\index{gamma@{gamma}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{gamma}{gamma}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+particle\+::gamma}
+
+Stiffness \mbox{\Hypertarget{class_s_p_h__particle_a051da004f8b1e2214e3523bbd0634301}\label{class_s_p_h__particle_a051da004f8b1e2214e3523bbd0634301}} 
+\index{SPH\_particle@{SPH\_particle}!list\_num@{list\_num}}
+\index{list\_num@{list\_num}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{list\_num}{list\_num}}
+{\footnotesize\ttfamily int S\+P\+H\+\_\+particle\+::list\+\_\+num\mbox{[}2\mbox{]}}
+
+index in neighbour finding array \mbox{\Hypertarget{class_s_p_h__particle_a66fa999693a147d310fb9a3e630e028a}\label{class_s_p_h__particle_a66fa999693a147d310fb9a3e630e028a}} 
+\index{SPH\_particle@{SPH\_particle}!mass@{mass}}
+\index{mass@{mass}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{mass}{mass}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+particle\+::mass}
+
+mass in kg \mbox{\Hypertarget{class_s_p_h__particle_ab7e9da96153ff887ae1b72f32f6c8868}\label{class_s_p_h__particle_ab7e9da96153ff887ae1b72f32f6c8868}} 
+\index{SPH\_particle@{SPH\_particle}!rho@{rho}}
+\index{rho@{rho}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{rho}{rho}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+particle\+::rho\mbox{[}2\mbox{]}}
+
+density and pressure \mbox{\Hypertarget{class_s_p_h__particle_a2acdedcab83c44bf7c3c1a899f01df4f}\label{class_s_p_h__particle_a2acdedcab83c44bf7c3c1a899f01df4f}} 
+\index{SPH\_particle@{SPH\_particle}!rho0@{rho0}}
+\index{rho0@{rho0}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{rho0}{rho0}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+particle\+::rho0}
+
+density in kg / m$^\wedge$3 \mbox{\Hypertarget{class_s_p_h__particle_a74544820f506880ea21d10c3260c4e62}\label{class_s_p_h__particle_a74544820f506880ea21d10c3260c4e62}} 
+\index{SPH\_particle@{SPH\_particle}!rho\_new@{rho\_new}}
+\index{rho\_new@{rho\_new}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{rho\_new}{rho\_new}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+particle\+::rho\+\_\+new}
+
+temporary rho storage used during smoothing \mbox{\Hypertarget{class_s_p_h__particle_a7709c060e797c275850b7c5232e23064}\label{class_s_p_h__particle_a7709c060e797c275850b7c5232e23064}} 
+\index{SPH\_particle@{SPH\_particle}!step@{step}}
+\index{step@{step}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{step}{step}}
+{\footnotesize\ttfamily int S\+P\+H\+\_\+particle\+::step}
+
+step incrementor of predictor-\/corrector method \mbox{\Hypertarget{class_s_p_h__particle_ac0e2dd8719e4512c0064d860a93543d3}\label{class_s_p_h__particle_ac0e2dd8719e4512c0064d860a93543d3}} 
+\index{SPH\_particle@{SPH\_particle}!visc@{visc}}
+\index{visc@{visc}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{visc}{visc}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+particle\+::visc}
+
+viscosity in Pa s \mbox{\Hypertarget{class_s_p_h__particle_a702ad69836ea65d163d0a3d7564ca0be}\label{class_s_p_h__particle_a702ad69836ea65d163d0a3d7564ca0be}} 
+\index{SPH\_particle@{SPH\_particle}!x@{x}}
+\index{x@{x}!SPH\_particle@{SPH\_particle}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily double S\+P\+H\+\_\+particle\+::x\mbox{[}2\mbox{]}\mbox{[}2\mbox{]}}
+
+position and velocity 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+S\+P\+H\+\_\+2\+D.\+h\end{DoxyCompactItemize}
